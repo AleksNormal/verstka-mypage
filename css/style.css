@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Cousine', monospace;*/
+    /*font-family: 'Roboto Mono', monospace;*/
+}
+
+html, body{
+    height: 100%;
+}
+
+h1{
+    font-size: 18px;
+    margin: 10px 0 ;
+}
+
+
+.header, .middle, .footer{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header{
+    position: relative;
+    z-index: 2;
+}
+
+.header .content{
+    position: relative;
+    z-index: 2;
+    height: 160px;
+    padding-top: 1px;
+}
+.header .bg{
+    background-color: #000;
+    opacity: 0.85;
+    position: absolute;
+    top:0; left:0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.header .menu{
+    /*display: none;*/
+    margin: 35px 0 0 320px;
+}
+.header .menu ul{
+    list-style: none;
+}
+.header .menu li{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 10px;
+}
+.header .menu li a{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header .slogan{
+    margin: 20px 0 0 320px;
+}
+.header .slogan .ico-opencart{
+    width: 230px;
+    height: 55px;
+    background: url('../images/ico-sprite.png') 0 -55px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .slogan .text{
+    color: #ff9933;
+    font-size: 18px;
+    height: 55px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.middle{
+    margin-top: -55px;
+    z-index: 1;
+}
+
+.middle .content{
+
+    height: 755px;
+    position: relative;
+    z-index: 2;
+}
+.middle .bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.middle .bg .image{
+    background: url("../images/bg.jpg") no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.middle .bg .mask{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #000;
+    opacity: 0.55;
+}
+
+.footer{
+}
+.footer .bg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url('../images/footer-bg.jpg') repeat;
+}
+.footer .content{
+    position: relative;
+    z-index: 2;
+    height: 120px;
+}
+
+.user{
+    position: absolute;
+    top:60px;
+    left: 10px;
+    width:290px;
+    background: #ffffff;
+    border: 3px solid #ff6600;
+
+    z-index: 10;
+
+}
+.user .face{
+    width: 220px;
+    height: 220px;
+    margin: -50px auto 10px auto;
+    text-align: center;
+    border: 6px solid #757575;
+    border-radius: 120px;
+    /*border-bottom-color: #ffed22;*/
+    /*border-left-color: #ff0a79;*/
+    /*border-right-color: #06ff08;*/
+}
+
+.user .btn-contact{
+    text-transform: uppercase;
+}
+.user .about{
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.user .contact{
+    margin: 10px 10px;
+}
+.user .contact .ico{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/ico-sprite.png') no-repeat;
+    vertical-align: top;
+
+}
+.user .contact .link{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color:#0099ff;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.user .contact .link a{
+    cursor: pointer;
+    color:#0099ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user .contact .link a:hover{
+    text-decoration: underline;
+}
+
+.user .grey-line{
+    height: 5px;
+    width: 70%;
+    margin: 10px auto;
+    background: #cccccc;
+}
+
+.user .contact.skype .ico{
+    background-position: 0 0;
+}
+.user .contact.mail .ico{
+    background-position: -48px 0;
+}
+.user .contact.fl .ico{
+    background-position: -104px 0;
+}
+.user .contact.wl .ico{
+    background-position: -160px 0;
+}
+
+.user .btn-send-message{
+    width: 80%;
+    background-color: #0099ff;
+    border: 2px solid #006699;
+    margin: 20px auto;
+    line-height: 40px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.user .description{
+    margin: 5%;
+}
+.user .description p{
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.services{
+    width: 470px;
+    float: right;
+    margin: 70px -30px 0 0;
+}
+.services .service{
+    margin-bottom: 1px;
+}
+
+.services .service .title{
+    height: 130px;
+    width: 100%;
+    background: url('../images/menu-fon.png') no-repeat;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.services .service .title a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    margin: 35px 100px;
+}
+.services .service.adaptive .title{
+    background-position: 0 0;
+}
+.services .service.modules .title{
+    background-position: 0 -140px;
+}
+.services .service.payments .title{
+    background-position: 0 -280px;
+}
+.services .service.pagespeed .title{
+    background-position: 0 -420px;
+}
+.services .service.api .title{
+    background-position: 0 -560px;
+}
+
+.services .service .description{
+    padding: 30px 10px 10px 10px;
+    margin: -40px 10% 0 10%;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+
+    display: none;
+}
+.services .service.modules .title a,
+.services .service.pagespeed .title a{
+    color: #000000;
+}
+
+.btn{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff3700;
+    font-size: 16px;
+
+}
