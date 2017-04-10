@@ -14,8 +14,11 @@ html, body{
 }
 
 h1{
-    font-size: 18px;
-    margin: 10px 0 ;
+    font-size: 32px;
+    margin: 20px auto ;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Cousine', monospace;
 }
 
 
@@ -124,8 +127,11 @@ h1{
     background: #000;
     opacity: 0.55;
 }
+.middle .height-755{
+    height: 755px;
+}
 
-.footer{
+/*.footer{
 }
 .footer .bg{
     position: absolute;
@@ -140,7 +146,7 @@ h1{
     position: relative;
     z-index: 2;
     height: 120px;
-}
+}*/
 
 .user{
     position: absolute;
@@ -249,6 +255,7 @@ h1{
     width: 470px;
     float: right;
     margin: 70px -30px 0 0;
+    height: 685px;
 }
 .services .service{
     margin-bottom: 1px;
@@ -314,4 +321,44 @@ h1{
     background-color: #ff3700;
     font-size: 16px;
 
+}
+
+.features{
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    padding: 1px 0 30px 0;
+}
+.features h1{
+    margin: 40px auto 0 auto;
+}
+
+.feature{
+    display: inline-block;
+    width: 24.6%;
+    vertical-align: top;
+}
+.feature .content{
+    margin: 0 5% 5% 5%;
+    height: auto;
+}
+.feature .description{
+    color: #669900;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+.feature .circle{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.feature .circle .timer *{
+    font-size: 30px;
+}
+.feature.opencart .description,
+.feature.errors .description
+{
+    width: 50%;
 }
