@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -9,78 +9,84 @@
     /*font-family: 'Roboto Mono', monospace;*/
 }
 
-html, body{
+html, body {
     height: 100%;
 }
 
-h1{
+h1 {
     font-size: 32px;
-    margin: 20px auto ;
+    margin: 20px auto;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Cousine', monospace;
 }
 
-
-.header, .middle, .footer{
+.header, .middle, .footer {
     width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
-.header{
+.header {
     position: relative;
     z-index: 2;
 }
 
-.header .content{
+.header .content {
     position: relative;
     z-index: 2;
     height: 160px;
     padding-top: 1px;
 }
-.header .bg{
+
+.header .bg {
     background-color: #000;
     opacity: 0.85;
     position: absolute;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     z-index: 1;
     height: 100%;
     width: 100%;
 }
 
-.header .menu{
+.header .menu {
     /*display: none;*/
     margin: 35px 0 0 320px;
 }
-.header .menu ul{
+
+.header .menu ul {
     list-style: none;
 }
-.header .menu li{
+
+.header .menu li {
     display: inline-block;
     height: 40px;
     line-height: 40px;
     color: #fff;
     margin-left: 10px;
 }
-.header .menu li a{
+
+.header .menu li a {
     color: #fff;
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     text-decoration: none;
 }
 
-.header .slogan{
+.header .slogan {
     margin: 20px 0 0 320px;
 }
-.header .slogan .ico-opencart{
+
+.header .slogan .ico-opencart {
     width: 230px;
     height: 55px;
     background: url('../images/ico-sprite.png') 0 -55px no-repeat;
     display: inline-block;
     vertical-align: middle;
 }
-.header .slogan .text{
+
+.header .slogan .text {
     color: #ff9933;
     font-size: 18px;
     height: 55px;
@@ -89,45 +95,49 @@ h1{
     line-height: 60px;
 }
 
-.middle{
+.middle {
     margin-top: -55px;
     z-index: 1;
 }
 
-.middle .content{
+.middle .content {
 
     height: 755px;
     position: relative;
     z-index: 2;
 }
-.middle .bg{
+
+.middle .bg {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
-.middle .bg .image{
+
+.middle .bg .image {
     background: url("../images/bg.jpg") no-repeat;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
-.middle .bg .mask{
+
+.middle .bg .mask {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 2;
     background: #000;
     opacity: 0.55;
 }
-.middle .height-755{
+
+.middle .height-755 {
     height: 755px;
 }
 
@@ -148,18 +158,19 @@ h1{
     height: 120px;
 }*/
 
-.user{
+.user {
     position: absolute;
-    top:60px;
+    top: 60px;
     left: 10px;
-    width:290px;
+    width: 290px;
     background: #ffffff;
     border: 3px solid #ff6600;
 
     z-index: 10;
 
 }
-.user .face{
+
+.user .face {
     width: 220px;
     height: 220px;
     margin: -50px auto 10px auto;
@@ -171,10 +182,11 @@ h1{
     /*border-right-color: #06ff08;*/
 }
 
-.user .btn-contact{
+.user .btn-contact {
     text-transform: uppercase;
 }
-.user .about{
+
+.user .about {
     padding: 15px;
     text-align: center;
     font-style: italic;
@@ -183,10 +195,11 @@ h1{
 
 }
 
-.user .contact{
+.user .contact {
     margin: 10px 10px;
 }
-.user .contact .ico{
+
+.user .contact .ico {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -194,46 +207,51 @@ h1{
     vertical-align: top;
 
 }
-.user .contact .link{
+
+.user .contact .link {
     display: inline-block;
     height: 40px;
     line-height: 40px;
-    color:#0099ff;
+    color: #0099ff;
     vertical-align: top;
     margin-left: 10px;
 }
-.user .contact .link a{
+
+.user .contact .link a {
     cursor: pointer;
-    color:#0099ff;
+    color: #0099ff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.user .contact .link a:hover{
+.user .contact .link a:hover {
     text-decoration: underline;
 }
 
-.user .grey-line{
+.user .grey-line {
     height: 5px;
     width: 70%;
     margin: 10px auto;
     background: #cccccc;
 }
 
-.user .contact.skype .ico{
+.user .contact.skype .ico {
     background-position: 0 0;
 }
-.user .contact.mail .ico{
+
+.user .contact.mail .ico {
     background-position: -48px 0;
 }
-.user .contact.fl .ico{
+
+.user .contact.fl .ico {
     background-position: -104px 0;
 }
-.user .contact.wl .ico{
+
+.user .contact.wl .ico {
     background-position: -160px 0;
 }
 
-.user .btn-send-message{
+.user .btn-send-message {
     width: 80%;
     background-color: #0099ff;
     border: 2px solid #006699;
@@ -243,25 +261,28 @@ h1{
     -moz-border-radius: 7px;
     border-radius: 7px;
 }
-.user .description{
+
+.user .description {
     margin: 5%;
 }
-.user .description p{
+
+.user .description p {
     margin: 10px 0;
     font-style: italic;
 }
 
-.services{
+.services {
     width: 470px;
     float: right;
     margin: 70px -30px 0 0;
     height: 685px;
 }
-.services .service{
+
+.services .service {
     margin-bottom: 1px;
 }
 
-.services .service .title{
+.services .service .title {
     height: 130px;
     width: 100%;
     background: url('../images/menu-fon.png') no-repeat;
@@ -272,31 +293,38 @@ h1{
     vertical-align: middle;
 
 }
-.services .service .title a{
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    display: inline-block;
-    margin: 35px 100px;
+
+.services .service .title a {
+    /*    color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        display: inline-block;
+        margin: 35px auto;
+        width: 60%;*/
 }
-.services .service.adaptive .title{
+
+.services .service.adaptive .title {
     background-position: 0 0;
 }
-.services .service.modules .title{
+
+.services .service.modules .title {
     background-position: 0 -140px;
 }
-.services .service.payments .title{
+
+.services .service.payments .title {
     background-position: 0 -280px;
 }
-.services .service.pagespeed .title{
+
+.services .service.pagespeed .title {
     background-position: 0 -420px;
 }
-.services .service.api .title{
+
+.services .service.api .title {
     background-position: 0 -560px;
 }
 
-.services .service .description{
+.services .service .description {
     padding: 30px 10px 10px 10px;
     margin: -40px 10% 0 10%;
     background-color: #ffffff;
@@ -305,12 +333,13 @@ h1{
 
     display: none;
 }
+
 .services .service.modules .title a,
-.services .service.pagespeed .title a{
+.services .service.pagespeed .title a {
     color: #000000;
 }
 
-.btn{
+.btn {
     display: block;
     height: 45px;
     line-height: 45px;
@@ -323,42 +352,218 @@ h1{
 
 }
 
-.features{
+.features {
     width: 90%;
     margin: 0 auto;
     clear: both;
     padding: 1px 0 30px 0;
 }
-.features h1{
+
+.features h1 {
     margin: 40px auto 0 auto;
 }
 
-.feature{
+.feature {
     display: inline-block;
     width: 24.6%;
     vertical-align: top;
 }
-.feature .content{
+
+.feature .content {
     margin: 0 5% 5% 5%;
     height: auto;
 }
-.feature .description{
+
+.feature .description {
     color: #669900;
     font-size: 22px;
     text-align: center;
     margin: 0 auto;
 }
-.feature .circle{
+
+.feature .circle {
     width: 200px;
     height: 200px;
     margin: 0 auto;
 }
 
-.feature .circle .timer *{
+.feature .circle .timer * {
     font-size: 30px;
 }
+
 .feature.opencart .description,
-.feature.errors .description
-{
+.feature.errors .description {
     width: 50%;
 }
+
+/* --------------------------------------------- */
+.services .item{
+    font-size: 20px;
+    width: 60%;
+    margin: 30px auto 0 auto;
+
+}
+
+.services a,
+.services a > span {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.services a:before,
+.services a:after,
+.services a > span:before,
+.services a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.effect-5 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect-5:before, .effect-5:after {
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+}
+
+.effect-5:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+
+.effect-5:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.effect-5 > span {
+    display: block;
+    padding: 10px;
+}
+
+.effect-5 > span:before, .effect-5 > span:after {
+    left: 0;
+    top: 0;
+    background: #ffffff;
+}
+
+.effect-5 > span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+
+.effect-5 > span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.effect-5:hover:before, .effect-5:hover:after, .effect-5:hover > span:before, .effect-5:hover > span:after {
+    transform: translate(0, 0);
+}
+
+
+.services .modules a > span,
+.services .pagespeed a > span{
+    color: #000000;
+}
+
+.services .modules .effect-5 > span:before,
+.services .modules .effect-5 > span:after,
+.services .modules .effect-5:before,
+.services .modules .effect-5:after,
+.services .pagespeed .effect-5 > span:before,
+.services .pagespeed .effect-5 > span:after,
+.services .pagespeed .effect-5:before,
+.services .pagespeed .effect-5:after {
+     background: #000000;
+}
+/*.services a{
+    display: inline-block;
+    line-height: 1.2em;
+    width: 55%;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #ffffff;
+    position: relative;
+    top: 50%;
+    margin: -1.5em 0 0 0;
+}
+.services a,
+.services a span
+{
+    font-size: 20px;
+    display: inline-block;
+}
+.services .top-bottom{
+    display: block;
+}
+.services .top-bottom:after,
+.services .top-bottom:before,
+.services .left-right:after,
+.services .left-right:before{
+    content: '';
+    background: #ffffff;
+}
+.services .top-bottom:after,
+.services .top-bottom:before{
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+}
+.services .left-right:after,
+.services .left-right:before{
+    width: 1px;
+    height: 2em;
+    display: inline-block;
+}*/
+/*
+
+
+
+.services .square{
+    display: inline-block;
+    margin: 20px auto;
+    width: 55%;
+}
+.services .square a{
+    display: inline-block;
+    line-height: 1.2em;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: top;
+}
+.services .square:before,
+.services .square:after,
+.services .square a:before,
+.services .square a:after{
+    content: "";
+    background: #ffffff;
+}
+
+.services .square:before,
+.services .square:after{
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+}
+.services .square a:before,
+.services .square a:after{
+    width: 1px;
+    height: 2.4em;
+    display: inline-block;
+    vertical-align: top;
+}
+*/
