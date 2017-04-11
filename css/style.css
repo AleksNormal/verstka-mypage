@@ -11,6 +11,7 @@
 
 html, body {
     height: 100%;
+
 }
 
 h1 {
@@ -19,6 +20,10 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Cousine', monospace;
+}
+
+.wrap{
+    min-height: 100%;
 }
 
 .header, .middle, .footer {
@@ -101,8 +106,6 @@ h1 {
 }
 
 .middle .content {
-
-    height: 755px;
     position: relative;
     z-index: 2;
 }
@@ -112,7 +115,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 755px;
     z-index: 1;
 }
 
@@ -122,7 +125,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 755px;
     z-index: 1;
 }
 
@@ -131,7 +134,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 755px;
     z-index: 2;
     background: #000;
     opacity: 0.55;
@@ -140,8 +143,13 @@ h1 {
 .middle .height-755 {
     height: 755px;
 }
+.footer-margin{
+    height: 100px;
+}
 
-/*.footer{
+.footer{
+    padding-top: 1px;
+    margin-top: -80px;
 }
 .footer .bg{
     position: absolute;
@@ -155,9 +163,13 @@ h1 {
 .footer .content{
     position: relative;
     z-index: 2;
-    height: 120px;
-}*/
-
+    height: 50px;
+    padding: 15px;
+    color: #ffffff;
+}
+.footer .content p{
+    margin: 0 0 10px 50px;
+}
 .user {
     position: absolute;
     top: 60px;
@@ -357,6 +369,7 @@ h1 {
     margin: 0 auto;
     clear: both;
     padding: 1px 0 30px 0;
+    background: #ffffff;
 }
 
 .features h1 {
@@ -488,82 +501,46 @@ h1 {
 .services .pagespeed .effect-5:after {
      background: #000000;
 }
-/*.services a{
-    display: inline-block;
-    line-height: 1.2em;
-    width: 55%;
-    text-decoration: none;
-    vertical-align: middle;
-    color: #ffffff;
-    position: relative;
+
+.tehnology .bx-wrapper{
+    margin: 30px auto;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tehnology .bx-wrapper .bx-controls-direction a {
+    position: absolute;
     top: 50%;
-    margin: -1.5em 0 0 0;
+    margin-top: -50px;
+    outline: 0;
+    width: 30px;
+    height: 100px;
+    text-indent: -9999px;
+    z-index: 9999;
+   /*
+    border: 1px solid #757575;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;*/
 }
-.services a,
-.services a span
-{
-    font-size: 20px;
-    display: inline-block;
+.tehnology .bx-wrapper .bx-prev {
+    left: -60px;
+    background: url('../images/ico-sprite.png') no-repeat 5px -288px;
 }
-.services .top-bottom{
-    display: block;
-}
-.services .top-bottom:after,
-.services .top-bottom:before,
-.services .left-right:after,
-.services .left-right:before{
-    content: '';
-    background: #ffffff;
-}
-.services .top-bottom:after,
-.services .top-bottom:before{
-    width: 100%;
-    height: 1px;
-    display: inline-block;
-}
-.services .left-right:after,
-.services .left-right:before{
-    width: 1px;
-    height: 2em;
-    display: inline-block;
-}*/
-/*
-
-
-
-.services .square{
-    display: inline-block;
-    margin: 20px auto;
-    width: 55%;
-}
-.services .square a{
-    display: inline-block;
-    line-height: 1.2em;
-    width: 100%;
-    margin: 0;
-    font-size: 20px;
-    text-decoration: none;
-    vertical-align: top;
-}
-.services .square:before,
-.services .square:after,
-.services .square a:before,
-.services .square a:after{
-    content: "";
-    background: #ffffff;
+.tehnology .bx-wrapper .bx-prev:hover,
+.tehnology .bx-wrapper .bx-prev:focus{
+    background: url('../images/ico-sprite.png') no-repeat 5px -288px;
 }
 
-.services .square:before,
-.services .square:after{
-    width: 100%;
-    height: 1px;
-    display: inline-block;
+.tehnology .bx-wrapper .bx-next {
+    right: -60px;
+    background: url('../images/ico-sprite.png') no-repeat -30px -288px;
 }
-.services .square a:before,
-.services .square a:after{
-    width: 1px;
-    height: 2.4em;
-    display: inline-block;
-    vertical-align: top;
+.tehnology .bx-wrapper .bx-next:hover,
+.tehnology .bx-wrapper .bx-next:focus{
+    background: url('../images/ico-sprite.png') no-repeat -30px -288px;
 }
-*/
+
+

@@ -36,4 +36,16 @@ $(document).ready(function(){
     options.foregroundBorderWidth = 25;
     options.noPercentageSign = true;
     $('#circle-errors').circliful(options);
+
+
+
+    $('.bxslider').bxSlider({
+        minSlides: 1,
+        maxSlides: 6,
+        moveSlides: 1,
+        slideWidth: 120,
+        slideMargin: 25,
+        pager: false
+    });
+
 });
