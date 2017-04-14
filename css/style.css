@@ -362,6 +362,14 @@ h1 {
     background-color: #ff3700;
     font-size: 16px;
 
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.btn:focus {
+    outline: none;
 }
 
 .features {
