@@ -9,6 +9,11 @@
     /*font-family: 'Roboto Mono', monospace;*/
 }
 
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
 
@@ -22,7 +27,14 @@ h1 {
     font-family: 'Cousine', monospace;
 }
 
-.wrap{
+h2, h3 {
+    font-size: 20px;
+    margin: 10px auto;
+    font-family: 'Cousine', monospace;
+    line-height: 1.5em;
+}
+
+.wrap {
     min-height: 100%;
 }
 
@@ -143,33 +155,38 @@ h1 {
 .middle .height-755 {
     height: 755px;
 }
-.footer-margin{
+
+.footer-margin {
     height: 100px;
 }
 
-.footer{
+.footer {
     padding-top: 1px;
-    margin-top: -80px;
+    margin-top: -90px;
 }
-.footer .bg{
+
+.footer .bg {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
     background: url('../images/footer-bg.jpg') repeat;
 }
-.footer .content{
+
+.footer .content {
     position: relative;
     z-index: 2;
-    height: 50px;
+    height: auto;
     padding: 15px;
     color: #ffffff;
 }
-.footer .content p{
-    margin: 0 0 10px 50px;
+
+.footer .content p {
+    margin: 5px 0 5px 0;
 }
+
 .user {
     position: absolute;
     top: 60px;
@@ -187,8 +204,11 @@ h1 {
     height: 220px;
     margin: -50px auto 10px auto;
     text-align: center;
-    border: 6px solid #757575;
+    border: 6px solid #ffa200;
     border-radius: 120px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
     /*border-bottom-color: #ffed22;*/
     /*border-left-color: #ff0a79;*/
     /*border-right-color: #06ff08;*/
@@ -196,6 +216,13 @@ h1 {
 
 .user .btn-contact {
     text-transform: uppercase;
+    background-color: #ff3900;
+    border: none;
+}
+
+.user .btn-contact:active {
+    top: -2px;
+    left: 0;
 }
 
 .user .about {
@@ -205,6 +232,12 @@ h1 {
     font-weight: bold;
     font-size: 18px;
 
+}
+
+.user .about p,
+.user .about div,
+.user .about span {
+    font-size: inherit;
 }
 
 .user .contact {
@@ -353,14 +386,17 @@ h1 {
 
 .btn {
     display: block;
+    min-width: 200px;
     height: 45px;
     line-height: 45px;
-    border: none;
     cursor: pointer;
     color: #ffffff;
     text-align: center;
-    background-color: #ff3700;
+    background-color: #0099ff;
+    border: 1px solid #006699;
     font-size: 16px;
+    margin: 0 auto;
+    padding: 0 20px;
 
     vertical-align: middle;
     position: relative;
@@ -368,8 +404,29 @@ h1 {
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .btn:focus {
     outline: none;
+}
+
+.btn:active {
+    top: 2px;
+    left: 2px;
+}
+
+.btn span {
+    line-height: 45px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn span:before {
+    line-height: 45px;
+    font-size: 16px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/ico-sprite.png');
 }
 
 .features {
@@ -418,7 +475,7 @@ h1 {
 }
 
 /* --------------------------------------------- */
-.services .item{
+.services .item {
     font-size: 20px;
     width: 60%;
     margin: 30px auto 0 auto;
@@ -493,9 +550,8 @@ h1 {
     transform: translate(0, 0);
 }
 
-
 .services .modules a > span,
-.services .pagespeed a > span{
+.services .pagespeed a > span {
     color: #000000;
 }
 
@@ -507,10 +563,13 @@ h1 {
 .services .pagespeed .effect-5 > span:after,
 .services .pagespeed .effect-5:before,
 .services .pagespeed .effect-5:after {
-     background: #000000;
+    background: #000000;
 }
 
-.tehnology .bx-wrapper{
+.tehnology{
+    margin-bottom: 10px;
+}
+.tehnology .bx-wrapper {
     margin: 30px auto;
     border: none;
     -webkit-box-shadow: none;
@@ -527,18 +586,20 @@ h1 {
     height: 100px;
     text-indent: -9999px;
     z-index: 9999;
-   /*
-    border: 1px solid #757575;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;*/
+    /*
+     border: 1px solid #757575;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;*/
 }
+
 .tehnology .bx-wrapper .bx-prev {
     left: -60px;
     background: url('../images/ico-sprite.png') no-repeat 5px -288px;
 }
+
 .tehnology .bx-wrapper .bx-prev:hover,
-.tehnology .bx-wrapper .bx-prev:focus{
+.tehnology .bx-wrapper .bx-prev:focus {
     background: url('../images/ico-sprite.png') no-repeat 5px -288px;
 }
 
@@ -546,9 +607,108 @@ h1 {
     right: -60px;
     background: url('../images/ico-sprite.png') no-repeat -30px -288px;
 }
+
 .tehnology .bx-wrapper .bx-next:hover,
-.tehnology .bx-wrapper .bx-next:focus{
+.tehnology .bx-wrapper .bx-next:focus {
     background: url('../images/ico-sprite.png') no-repeat -30px -288px;
 }
 
+form .row {
+    width: 100%;
+}
 
+form .row * {
+    font-size: 16px;
+}
+
+form .field,
+form .field-1 {
+    float: left;
+    width: 100%;
+}
+
+form .field-2 {
+    float: left;
+    max-width: 50%;
+    width: 50%;
+
+}
+
+form .field-3 {
+    float: left;
+    max-width: 33%;
+    width: 33%;
+}
+
+form .btn-send-form {
+    background-position: 170px -670px;
+}
+
+/* --------- блок с текстом-------------    */
+.description-text {
+    margin: 20px auto 90px auto;
+    width: 85%;
+}
+
+.description-text p,
+.description-text div,
+.description-text span,
+.description-text td,
+.description-text li {
+    font-size: 16px;
+    font-family: Helvetica;
+
+}
+
+.description-text h2 {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #e5e5e5;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding-left: 60px;
+}
+
+.description-text h2:before,
+.description-text h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #9900ff url('../images/ico-sprite.png') 0 -900px;
+    border: 2px solid #660099;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.description-text h2:before {
+    top: -17px;
+    left: -30px;
+}
+
+.description-text h2:after {
+    top: -17px;
+    right: -30px;
+}
+
+.description-text > div{
+    padding: 30px;
+    border-left: 2px solid #9900ff;
+    border-right: 2px solid #9900ff;
+    text-align: justify;
+}
+.description-text > div:last-child{
+    border-bottom: 2px solid #9900ff;
+}
+
+/* --------- блок с текстом конец-------------    */
+
+.clear {
+    clear: both;
+}
