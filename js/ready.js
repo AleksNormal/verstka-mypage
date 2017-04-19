@@ -48,4 +48,24 @@ $(document).ready(function(){
         pager: false
     });
 
+
+    $('.product-page .slider').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+        slideMargin: 0,
+        pager: true,
+        pagerCustom: '.slider-pager',
+        controls: false
+    });
+
+    $('.product-page .slider-pager').bxSlider({
+        minSlides: 6,
+        maxSlides: 6,
+        moveSlides: 4,
+        slideWidth: 80,
+        slideMargin: 10,
+        pager: false
+
+    });
 });

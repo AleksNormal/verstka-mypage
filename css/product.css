@@ -1,0 +1,144 @@
+.product-page p,
+.product-page div,
+.product-page span,
+.product-page label,
+.product-page td{
+    font-size: 16px;
+}
+.product-page {
+    margin-top: 90px;
+}
+
+.product-page h1 {
+    text-transform: none;
+}
+
+.product-page .images {
+    width: 610px;
+    float: left;
+}
+
+.product-page .slider-pager img {
+    width: 80px;
+    height: 80px;
+
+}
+
+.product-page .price,
+.product-page .options,
+.product-page .advantages,
+.product-page .buy{
+    float: right;
+    width: 520px;
+    margin-bottom: 30px;
+}
+
+.product-page .price{
+    height: 130px;
+    background: url('../images/menu-fon.png') no-repeat 0 -280px;
+    padding: 20px 0 0 40px;
+}
+.product-page .price > span {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 28px;
+    font-style: italic;
+    font-family: Verdana;
+    margin-right: 15px;
+    color: #ffffff;
+
+}
+
+.product-page .price .ico {
+    width: 60px;
+    height: 60px;
+    background: url("../images/ico-sprite.png") -70px -400px;
+    position: relative;
+    top: 15px;
+}
+
+.product-page .price .ico.rub {
+    background-position: 0 -470px;
+}
+
+.product-page .price .ico.uah {
+    background-position: 0 -540px;
+}
+
+.product-page .price-before {
+
+}
+
+.product-page .price .number {
+    font-size: 50px;
+}
+.product-page .options ul{
+    list-style: none;
+}
+.product-page .options li{
+    list-style: none;
+    display: block;
+    margin: 5px 0;
+    min-height: 30px;
+}
+.product-page .options li label{
+    min-height: 30px;
+    line-height: 30px;
+}
+.product-page .options p{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-page .btn-buy{
+    width: 345px;
+    height: 85px;
+    background: url('../images/ico-sprite.png') 0 -980px;
+    color: #ffffff;
+    font-size: 50px;
+    font-style: italic;
+    text-transform: uppercase;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border: 2px solid #ff33ff;
+    margin-left: 0;
+}
+
+.product-page .advantages{
+
+}
+.product-page .advantage{
+    border: 2px solid #0099ff;
+    background: rgba(0, 152, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 345px;
+    margin: 0 auto 10px 0;
+}
+.product-page .advantage > p:first-child{
+    font-size:60px;
+    font-weight:bold;
+    color: #ff3300;
+}
+.product-page .bx-wrapper{
+    margin: 0 auto 10px auto;
+}
+
+.product-page .bx-wrapper:first-child {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.product-page .bx-wrapper .bx-prev{
+    left: -45px;
+}
+.product-page .bx-wrapper .bx-next{
+    right: -45px;
+}
+.product-page .bx-wrapper:first-child .bx-prev{
+    left: -10px;
+}
+.product-page .bx-wrapper:first-child .bx-next{
+    right: -10px;
+}

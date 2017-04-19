@@ -28,7 +28,6 @@ perspective effects (not including the modals and the overlay).
     height: auto;
     z-index: 2000;
     visibility: hidden;
-	border: 1px solid #ff4012;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -51,7 +50,7 @@ perspective effects (not including the modals and the overlay).
     left: 0;
     z-index: 1000;
     opacity: 0;
-    background: rgba(143, 27, 15, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -89,15 +88,17 @@ perspective effects (not including the modals and the overlay).
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
 }
-.md-modal .md-close:focus{
+.md-modal .md-close:focus,
+.md-modal .md-close:active{
     border: none;
+    outline: none;
 }
 /* Content styles */
 .md-content {
     color: #000;
     background: #ffffff;
     position: relative;
-    border-radius: 3px;
+    border: 1px solid #ff4012;
     margin: 0 auto;
 }
 
@@ -110,6 +111,7 @@ perspective effects (not including the modals and the overlay).
     font-weight: 300;
     background: #ff4012;
     color: #ffffff;
+    margin: 0;
 }
 
 .md-content > div {
