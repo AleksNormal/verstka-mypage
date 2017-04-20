@@ -3,7 +3,7 @@
     padding: 0;
     border: none;
 
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     /*font-family: 'Cousine', monospace;*/
     /*font-family: 'Roboto Mono', monospace;*/
@@ -463,6 +463,34 @@ h2, h3 {
     height: 30px;
     background: url('../images/ico-sprite.png');
 }
+.btn-del{
+    display: block;
+    border:none;
+    width: 30px;
+    height: 30px;
+    background: url('../images/ico-sprite.png') -100px -800px;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.btn-del:hover{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.btn-del:focus{
+    border: none;
+    outline: none;
+}
 
 .features {
     width: 90%;
@@ -651,6 +679,7 @@ h2, h3 {
 
 form .row {
     width: 100%;
+    margin-bottom: 19px;
 }
 
 form .row * {

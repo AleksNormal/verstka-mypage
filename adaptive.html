@@ -18,12 +18,14 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="js/ModalWindowEffects/css/component.css">
     <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/cart.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/circliful/js/jquery.circliful.js"></script>
     <script src="js/bxsliled/js/jquery.bxslider.js"></script>
 
     <script src="js/ready.js"></script>
+
 
 </head>
 <body>
@@ -140,12 +142,13 @@
                         </ul>
                     </div>
                     <div class="buy">
-                        <button class="btn btn-buy">Заказать</button>
+                        <button class="btn btn-buy md-open" data-modal="modal" type="button">Заказать</button>
                     </div>
                     <div class="advantages">
                         <div class="advantage">
                             <p>36%</p>
-                            <p>запросов со словом "купить" сделано с мобильных устройств в 2017 году по статистике Яндекса</p>
+                            <p>запросов со словом "купить" сделано с мобильных устройств в 2017 году по статистике
+                                Яндекса</p>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -155,33 +158,45 @@
                         <h2>Что вы получите как заказчик?</h2>
                         <div>
                             <p>
-                                Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет
+                                Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название,
+                                не имеет
                                 никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на
-                                интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и
-                                т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую
-                                нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при
+                                интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев,
+                                отступов и
+                                т.д. Так как цель применения такого текста исключительно демонстрационная, то и
+                                смысловую
+                                нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на
+                                руку при
                                 оценке качества восприятия макета.
                             </p>
                         </div>
                         <h2>Что должен предоставить заказчик?</h2>
                         <div>
                             <p>
-                                Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет
+                                Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название,
+                                не имеет
                                 никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на
-                                интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и
-                                т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую
-                                нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при
+                                интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев,
+                                отступов и
+                                т.д. Так как цель применения такого текста исключительно демонстрационная, то и
+                                смысловую
+                                нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на
+                                руку при
                                 оценке качества восприятия макета.
                             </p>
                         </div>
                         <h2>Сколько времени понадобится на выполнение работы?</h2>
                         <div>
                             <p>
-                                Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет
+                                Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название,
+                                не имеет
                                 никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на
-                                интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и
-                                т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую
-                                нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при
+                                интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев,
+                                отступов и
+                                т.д. Так как цель применения такого текста исключительно демонстрационная, то и
+                                смысловую
+                                нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на
+                                руку при
                                 оценке качества восприятия макета.
                             </p>
                         </div>
@@ -205,62 +220,98 @@
 <div class="md-modal md-effect-9" id="modal">
     <div class="md-content">
         <button class="md-close"></button>
-        <h3>Отправить сообщение</h3>
+        <h3>Оформить заказ</h3>
         <div>
             <form action="index.html" method="post">
-                <div class="row">
-                    <div class="field">
+                <div class="md-cart">
+
+                    <div class="order">
+                        <div class="order-item">
+                            <div class="image">
+                                <img src="images/services/adaptive-2.jpg" alt="Картинка товара" width="100"
+                                     height="100">
+                            </div>
+                            <div class="product">
+                                <p class="name">Адаптивная верстка вашего интернет магазина</p>
+                                <div class="options">
+                                    <ul>
+                                        <li>сделать только верстку</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <button class="btn-del" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grey-line"></div>
+
+                    <div class="contacts">
+                        <h4>Ваши контакты</h4>
+                        <div class="row">
+                            <div class="field">
                         <span class="input input--juro">
                             <input class="input__field input__field--juro" type="text" id="input-name"/>
                             <label class="input__label input__label--juro" for="input-name">
                                 <span class="input__label-content input__label-content--juro">Ваше имя</span>
                             </label>
                         </span>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
 
-                <div class="row">
-                    <div class="field-2">
+                        <div class="row">
+                            <div class="field-2">
                         <span class="input input--juro">
                             <input class="input__field input__field--juro" type="text" id="input-email"/>
                             <label class="input__label input__label--juro" for="input-email">
                                 <span class="input__label-content input__label-content--juro">Ваш e-mail</span>
                             </label>
                         </span>
-                    </div>
-                    <div class="field-2">
+                            </div>
+                            <div class="field-2">
                         <span class="input input--juro">
                             <input class="input__field input__field--juro" type="text" id="input-skype"/>
                             <label class="input__label input__label--juro" for="input-skype">
                                 <span class="input__label-content input__label-content--juro">Ваш Skype</span>
                             </label>
                         </span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
                     </div>
+
+                    <div class="row">
+                        <button id="btn-send-order" class="btn btn-send-form btn-send-order button--ujarak"
+                                type="button">
+                            <span>Отправить</span>
+                        </button>
+                        <div class="clear"></div>
+                    </div>
+
+
+
                 </div>
 
-                <div class="row">
-                    <div class="field">
-                        <span class="input input--juro textarea">
-                            <textarea name="" id="input-message" class="input__field input__field--juro"></textarea>
-                            <label class="input__label input__label--juro" for="input-message">
-                                <span class="input__label-content input__label-content--juro">Ваше сообщение</span>
-                            </label>
-                        </span>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="row">
-                    <button id="btn-send-contact" class="btn btn-send-form btn-send-contact button--ujarak"
-                            type="button">
-                        <span>Отправить</span>
-                    </button>
-                </div>
 
                 <div class="clear"></div>
             </form>
         </div>
+
+        <div class="md-cart my-contacts">
+            <h4>Мои контакты</h4>
+            <div class="contact skype">
+                <div class="ico"></div>
+                <div class="link"><a href="skype:aleksnormal?add">AleksNormal</a></div>
+            </div>
+            <div class="contact mail">
+                <div class="ico"></div>
+                <div class="link"><a href="mailto:master@shop-proger.com">master@shop-proger.com</a></div>
+            </div>
+        </div>
+
     </div>
 </div>
 <div class="md-overlay"></div><!-- the overlay element -->
