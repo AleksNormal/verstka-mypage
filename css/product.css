@@ -87,15 +87,18 @@
 }
 .product-page .options p{
     font-weight: bold;
-    margin-bottom: 15px;
+    margin:0 0 10px 0;
+}
+.product-page .options .option{
+    margin-bottom: 20px;
 }
 
 .product-page .btn-buy{
-    width: 345px;
+    width: 90%;
     height: 85px;
     background: url('../images/ico-sprite.png') 0 -980px;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 35px;
     font-style: italic;
     text-transform: uppercase;
     -webkit-border-radius: 10px;
@@ -142,3 +145,121 @@
 .product-page .bx-wrapper:first-child .bx-next{
     right: -10px;
 }
+
+
+
+
+/* --------------    -----------------------------*/
+
+.option .input{
+    position: relative;
+    display: block;
+    margin: 0;
+    max-width: none;
+    width: 100%;
+    vertical-align: top;
+}
+
+.option input[type='text']{
+    width: 100%;
+    max-width: 450px;
+    height: 40px;
+    border: 1px solid #ff6600;
+    padding: 0 1em;
+    line-height: 40px;
+    color: #000000;
+    outline: none;
+}
+.option input[type='text']:focus{
+    border: 1px solid #9d02ff;
+    outline: none;
+}
+
+.option .custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+.option .custom-file-upload {
+    display: block;
+    width: auto;
+    height: 40px;
+    font-size: 1em;
+    margin: 0;
+}
+.option .custom-file-upload label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.option .file-upload-wrapper {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.option input.file-upload-input {
+    width: 300px;
+    height: 40px;
+    color: #000000;
+    font-size: 1em;
+    padding: 0 17px;
+    line-height: 40px;
+    border: 1px solid #ff6600;
+    background-color: #ffffff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    float: left;
+    /* IE 9 Fix */
+}
+.option .file-upload-input:hover, .file-upload-input:focus {
+    background-color: #ffffff;
+    outline: none;
+}
+
+.option .file-upload-button {
+    cursor: pointer;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    border: none;
+    margin-left: -1px;
+    background-color: #ff6600;
+    float: left;
+    /* IE 9 Fix */
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.option .file-upload-button:hover {
+    background-color: #d76500;
+}
+
+.option .comment{
+    border: 1px solid #ff6600;
+    padding: 1em;
+    width: 100%;
+    max-width: 450px;
+    height: 5em;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none ;
+    box-shadow: none;
+}
+
+.option .comment:focus{
+    border: 1px solid #9d02ff;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none ;
+    box-shadow: none;
+}
+
+
