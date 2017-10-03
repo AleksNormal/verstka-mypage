@@ -1,0 +1,1021 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Cousine', monospace;*/
+    /*font-family: 'Roboto Mono', monospace;*/
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+h1 {
+    font-size: 32px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Cousine', monospace;
+}
+
+h2, h3 {
+    font-size: 20px;
+    margin: 10px auto;
+    font-family: 'Cousine', monospace;
+    line-height: 1.5em;
+}
+
+.wrap {
+    min-height: 100%;
+}
+
+.header, .middle, .footer {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+}
+
+.header .content {
+    position: relative;
+    z-index: 2;
+    height: 160px;
+    padding-top: 1px;
+}
+
+.header .bg {
+    background-color: #000;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.header .menu {
+    /*display: none;*/
+    margin: 35px 0 0 320px;
+}
+
+.header .menu ul {
+    list-style: none;
+}
+
+.header .menu li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.header .menu li a {
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header .slogan {
+    margin: 20px 0 0 320px;
+}
+
+.header .slogan .ico-opencart {
+    width: 230px;
+    height: 55px;
+    background: url('../images/ico-sprite.png') 0 -55px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .slogan .text {
+    color: #ff9933;
+    font-size: 18px;
+    height: 55px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.middle {
+    margin-top: -55px;
+    z-index: 1;
+}
+
+.middle .content {
+    position: relative;
+    z-index: 2;
+}
+
+.middle .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 755px;
+    z-index: 1;
+}
+
+.middle .bg .image {
+    background: url("../images/bg.jpg") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 755px;
+    z-index: 1;
+}
+
+.middle .bg .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 755px;
+    z-index: 2;
+    background: #000;
+    opacity: 0.55;
+}
+
+.middle .height-755 {
+    height: 755px;
+}
+
+.footer-margin {
+    height: 100px;
+}
+
+.footer {
+    padding-top: 1px;
+    margin-top: -90px;
+}
+
+.footer .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url('../images/footer-bg.jpg') repeat;
+}
+
+.footer .content {
+    position: relative;
+    z-index: 2;
+    height: auto;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.footer .content p {
+    margin: 5px 0 5px 0;
+}
+
+.user {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 290px;
+    height: 900px;
+    background: #ffffff;
+    border: 3px solid #ff6600;
+
+    z-index: 10;
+
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.user .face {
+    width: 220px;
+    height: 220px;
+    margin: -50px auto 10px auto;
+    text-align: center;
+    border: 6px solid #ffa200;
+    border-radius: 120px;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    /*    position: relative;
+        top:0;
+        left:0;*/
+    /*border-bottom-color: #ffed22;*/
+    /*border-left-color: #ff0a79;*/
+    /*border-right-color: #06ff08;*/
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.user .face img {
+    width: 100%;
+}
+
+.user .btn-contact {
+    text-transform: uppercase;
+    background-color: #ff3900;
+    border: none;
+}
+
+.user .btn-contact:active {
+    top: -2px;
+    left: 0;
+}
+
+.user .btn-contact:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -15px;
+    background: url("../images/ico-sprite.png") -75px -915px;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.user.mini .btn-contact:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.user .about {
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+
+}
+
+.user .about p,
+.user .about div,
+.user .about span {
+    font-size: inherit;
+}
+
+.user .more-info {
+    height: 560px;
+    overflow: hidden;
+
+    -webkit-transition: all 1.8s;
+    -moz-transition: all 1.8s;
+    -ms-transition: all 1.8s;
+    -o-transition: all 1.8s;
+    transition: all 1.8s;
+}
+
+.user .more-info * {
+    font-size: 14px;
+}
+
+.user .contact {
+    margin: 10px 10px;
+}
+
+.user .contact .ico {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../images/ico-sprite.png') no-repeat;
+    vertical-align: top;
+
+}
+
+.user .contact .link {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #0099ff;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.user .contact .link a {
+    cursor: pointer;
+    color: #0099ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user .contact .link a:hover {
+    text-decoration: underline;
+}
+
+.user .grey-line {
+    height: 5px;
+    width: 70%;
+    margin: 10px auto;
+    background: #cccccc;
+}
+
+.user .contact.skype .ico {
+    background-position: 0 0;
+}
+
+.user .contact.mail .ico {
+    background-position: -48px 0;
+}
+
+.user .contact.fl .ico {
+    background-position: -104px 0;
+}
+
+.user .contact.wl .ico {
+    background-position: -160px 0;
+}
+
+.user .btn-send-message {
+    width: 80%;
+    background-color: #0099ff;
+    border: 2px solid #006699;
+    margin: 20px auto;
+    line-height: 40px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.user .description {
+    margin: 5%;
+}
+
+.user .description p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.user.mini {
+    height: 100px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.user.mini .face {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border: 3px solid #ffa200;
+    margin: -65px 10px 0 -10px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.user.mini .face img {
+    width: 100%;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.28s;
+    transition: all 0.2s;
+}
+
+.user.mini .about {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 175px;
+    font-size: 13px;
+    padding: 0;
+    text-align: left;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.user.mini .about p {
+    font: inherit;
+}
+
+.user.mini .more-info {
+    height: 0;
+    overflow: hidden;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.services {
+    width: 470px;
+    float: right;
+    margin: 70px -30px 0 0;
+    height: 685px;
+}
+
+.services .service {
+    margin-bottom: 1px;
+}
+
+.services .service .title {
+    height: 130px;
+    width: 100%;
+    background: url('../images/menu-fon.png') no-repeat;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.services .service .title a {
+    /*    color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        display: inline-block;
+        margin: 35px auto;
+        width: 60%;*/
+}
+
+.services .service.adaptive .title {
+    background-position: 0 0;
+}
+
+.services .service.modules .title {
+    background-position: 0 -140px;
+}
+
+.services .service.payments .title {
+    background-position: 0 -280px;
+}
+
+.services .service.pagespeed .title {
+    background-position: 0 -420px;
+}
+
+.services .service.api .title {
+    background-position: 0 -560px;
+}
+
+.services .service .description {
+    padding: 30px 10px 10px 10px;
+    margin: -40px 10% 0 10%;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+
+    display: none;
+}
+
+.services .service.modules .title a,
+.services .service.pagespeed .title a {
+    color: #000000;
+}
+
+.btn {
+    display: block;
+    min-width: 200px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    background-color: #0099ff;
+    border: 1px solid #006699;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    top: 2px;
+    left: 2px;
+}
+
+.btn span {
+    line-height: 45px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn span:before {
+    line-height: 45px;
+    font-size: 16px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/ico-sprite.png');
+}
+
+.btn-del {
+    display: block;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: url('../images/ico-sprite.png') -100px -800px;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.btn-del:hover {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.btn-del:focus {
+    border: none;
+    outline: none;
+}
+
+.features {
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    padding: 1px 0 30px 0;
+    background: #ffffff;
+}
+
+.features h1 {
+    margin: 40px auto 0 auto;
+}
+
+.feature {
+    display: inline-block;
+    width: 24.6%;
+    vertical-align: top;
+}
+
+.feature .content {
+    margin: 0 5% 5% 5%;
+    height: auto;
+}
+
+.feature .description {
+    color: #669900;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.feature .circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.feature .circle .timer * {
+    font-size: 30px;
+}
+
+.feature.opencart .description,
+.feature.errors .description {
+    width: 50%;
+}
+
+/* --------------------------------------------- */
+.services .item {
+    font-size: 20px;
+    width: 60%;
+    margin: 30px auto 0 auto;
+
+}
+
+.services a,
+.services a > span {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.services a:before,
+.services a:after,
+.services a > span:before,
+.services a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.effect-5 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect-5:before, .effect-5:after {
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+}
+
+.effect-5:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+
+.effect-5:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.effect-5 > span {
+    display: block;
+    padding: 10px;
+}
+
+.effect-5 > span:before, .effect-5 > span:after {
+    left: 0;
+    top: 0;
+    background: #ffffff;
+}
+
+.effect-5 > span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+
+.effect-5 > span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.effect-5:hover:before, .effect-5:hover:after, .effect-5:hover > span:before, .effect-5:hover > span:after {
+    transform: translate(0, 0);
+}
+
+.services .modules a > span,
+.services .pagespeed a > span {
+    color: #000000;
+}
+
+.services .modules .effect-5 > span:before,
+.services .modules .effect-5 > span:after,
+.services .modules .effect-5:before,
+.services .modules .effect-5:after,
+.services .pagespeed .effect-5 > span:before,
+.services .pagespeed .effect-5 > span:after,
+.services .pagespeed .effect-5:before,
+.services .pagespeed .effect-5:after {
+    background: #000000;
+}
+
+.tehnology {
+    margin-bottom: 10px;
+}
+
+.tehnology .bx-wrapper {
+    margin: 30px auto;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tehnology .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    outline: 0;
+    width: 30px;
+    height: 100px;
+    text-indent: -9999px;
+    z-index: 9999;
+    /*
+     border: 1px solid #757575;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;*/
+}
+
+.tehnology .bx-wrapper .bx-prev {
+    left: -60px;
+    background: url('../images/ico-sprite.png') no-repeat 5px -288px;
+}
+
+.tehnology .bx-wrapper .bx-prev:hover,
+.tehnology .bx-wrapper .bx-prev:focus {
+    background: url('../images/ico-sprite.png') no-repeat 5px -288px;
+}
+
+.tehnology .bx-wrapper .bx-next {
+    right: -60px;
+    background: url('../images/ico-sprite.png') no-repeat -30px -288px;
+}
+
+.tehnology .bx-wrapper .bx-next:hover,
+.tehnology .bx-wrapper .bx-next:focus {
+    background: url('../images/ico-sprite.png') no-repeat -30px -288px;
+}
+
+form .row {
+    width: 100%;
+    margin-bottom: 19px;
+}
+
+form .row * {
+    font-size: 16px;
+}
+
+form .field,
+form .field-1 {
+    float: left;
+    width: 100%;
+}
+
+form .field-2 {
+    float: left;
+    max-width: 50%;
+    width: 50%;
+
+}
+
+form .field-3 {
+    float: left;
+    max-width: 33%;
+    width: 33%;
+}
+
+form .btn-send-form {
+    background-position: 170px -670px;
+}
+
+/* --------- блок с текстом-------------    */
+.description-text {
+    margin: 20px auto 90px auto;
+    width: 85%;
+}
+
+.description-text p,
+.description-text div,
+.description-text span,
+.description-text td,
+.description-text li {
+    font-size: 16px;
+    font-family: Helvetica;
+
+}
+
+.description-text h2 {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #e5e5e5;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding-left: 60px;
+}
+
+.description-text h2:before,
+.description-text h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #9900ff url('../images/ico-sprite.png') 0 -900px;
+    border: 2px solid #660099;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.description-text h2:before {
+    top: -17px;
+    left: -30px;
+}
+
+.description-text h2:after {
+    top: -17px;
+    right: -30px;
+}
+
+.description-text > div {
+    padding: 30px;
+    border-left: 2px solid #9900ff;
+    border-right: 2px solid #9900ff;
+    text-align: justify;
+}
+
+.description-text > div:last-child {
+    border-bottom: 2px solid #9900ff;
+}
+
+.description-text > div,
+.description-text > div li ,
+.description-text > div p {
+    line-height: 1.6em;
+}
+
+.description-text > div li{
+
+}
+
+/* --------- блок с текстом конец-------------    */
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.messages {
+
+}
+
+.md-content .messages p {
+    font-size: 0.85em;
+    color: #FF0000;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.md-content .input.error {
+    border: 2px solid #FF0000;
+}
+
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.loading .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0.4;
+    z-index: 998;
+
+}
+
+.loading .loader {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    z-index: 999;
+}
+
+.alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    min-height: 70px;
+    margin-left: -225px;
+    margin-top: -50px;
+    border: 2px solid #ff6633;
+    background: #ff4012;
+    z-index: 10;
+
+}
+
+.alert .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('../images/ico-sprite.png') -200px -800px;
+}
+
+.alert .ico {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background: url('../images/ico-sprite.png') 0 -1100px;
+}
+
+.alert .content {
+    width: 70%;
+    margin-left: 80px;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.btn-close-effect {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.btn-close-effect:hover {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.btn-close-effect:focus {
+    border: none;
+    outline: none;
+}

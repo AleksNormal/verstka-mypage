@@ -1,6 +1,33 @@
-$font-stack:    Helvetica, sans-serif
-$primary-color: #333
+$font-main:  Helvetica, sans-serif
+$font-color: #ccc
+
+*
+  margin: 0
+  padding: 0
+  border: none
+  font-size: 15px
 
 body
-  font: 100% $font-stack
-  color: $primary-color
+  color: $font-color
+
+.container
+  padding: 10px
+  width: 100%
+  max-width: 1180px
+  margin: 0 auto
+
+.container-full
+  @extend .container
+  max-width: none
+  padding: 0
+
+
+
+.header
+  .top
+    background-color: #2f3238
+    min-height: 200px
+
+@import "modal"
+@import "menu"
+@import "form"
