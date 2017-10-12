@@ -1,0 +1,118 @@
+@import "variables"
+$color-menu-mobile: rgb(235, 52, 0)
+$color-menu: rgba(0, 0, 0, 0.84)
+$font-menu:   Helvetica, sans-serif
+$menu-height: 25px
+
+.menu
+  background-color: $color-menu
+  position: relative
+  @media(max-width: #{$screen-lg})
+    background-color: $color-menu-mobile
+  ul
+    display: inline-block
+    list-style: none
+    vertical-align: middle
+  li
+    list-style: none
+    display: inline-block
+    height: $menu-height
+    vertical-align: middle
+    a, span
+      color: #ffffff
+      font:
+        size: 1rem
+        family: $font-a
+      display: inline-block
+      padding: 0 20px
+      line-height: $menu-height
+      vertical-align: middle
+
+  .btn-mobile-menu
+    display: inline-block
+    width: $menu-height
+    height: $menu-height
+    cursor: pointer
+    background: none
+    vertical-align: middle
+    padding: 0
+    margin: 0
+    min-width: auto
+    min-height: auto
+    line-height: normal
+    border: none
+
+    .line
+      display: block
+      width: 90%
+      height: 15%
+      margin: 9% auto
+      background-color: #ffffff
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
+      border-radius: 5px
+
+    @media(min-width: #{$screen-lg})
+      display: none
+
+  .container-menu
+    margin: 0 0 0 320px
+    padding: 0
+    display: block
+    height: auto
+    overflow: visible
+    @media(max-width: #{$screen-lg})
+      display: block
+      position: absolute
+      top: $menu-height + $container-padding * 2
+      left: 0
+      width: 180px
+      padding: 0
+      margin: 0
+      height: 0
+      overflow: hidden
+      background-color: #333333
+      border: 0 solid $color-menu-mobile
+      z-index: 999
+      -webkit-box-shadow: 0 0 0 0 $color-menu-mobile
+      -moz-box-shadow: 0 0 0 0 $color-menu-mobile
+      box-shadow: 0 0 0 0 $color-menu-mobile
+      -webkit-transition: height 0.9s
+      -moz-transition: all 0.9s
+      -ms-transition: all 0.9s
+      -o-transition: all 0.9s
+      transition: all 0.9s
+      ul
+        display: block
+        li:nth-child(2n)
+          display: none
+      li
+        display: block
+        margin: 5px 0
+        a
+          -webkit-transition: all 0.3s
+          -moz-transition: all 0.3s
+          -ms-transition: all 0.3s
+          -o-transition: all 0.3s
+          transition: all 0.3s
+          &:before
+            content: ">"
+            display: inline-block
+            width: 20px
+            height: 20px
+            text-align: center
+            line-height: 20px
+            color: #ffffff
+          &:hover, :focus
+            color: #d76500
+            font-size: 1.2rem
+            text-decoration: underline
+      &.show
+        height: 250px
+        padding: 15px 0
+        border: 1px solid $color-menu-mobile
+        -webkit-box-shadow: 3px 4px 20px 0 $color-menu-mobile
+        -moz-box-shadow: 3px 4px 20px 0 $color-menu-mobile
+        box-shadow: 3px 4px 20px 0 $color-menu-mobile
+
+

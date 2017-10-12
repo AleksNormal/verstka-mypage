@@ -1,0 +1,31 @@
+@import "variables"
+
+$font-color-circliful: #669900
+
+.circliful
+  background-color: #ffffff
+  position: relative
+  .item
+    width: 24.5%
+    padding: 15px 30px
+    text-align: center
+    display: inline-block
+    vertical-align: top
+    @media (max-width: #{$screen-lg})
+      padding: 15px 10px
+    @media (max-width: #{$screen-md})
+      width: 49%
+  .text
+    width: 80%
+    margin: -5px auto 0 auto
+    font-size: 1.3rem
+    color: $font-color-circliful
+    text-align: center
+    @media (max-width: #{$screen-lg})
+      margin: 0 auto
+      width: 100%
+    @media (max-width: #{$screen-md})
+      font-size: 1rem
+  .circliful-box
+    margin-top: -50px
+

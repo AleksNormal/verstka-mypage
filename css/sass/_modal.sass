@@ -1,0 +1,96 @@
+@import "variables"
+$z-index-modal: 900
+$modal-btn-close-size: 50px
+$modal-header-size: $modal-btn-close-size + 10px
+
+.modal-transition
+  -webkit-transition: all 0.7s
+  -moz-transition: all 0.7s
+  -ms-transition: all 0.7s
+  -o-transition: all 0.7s
+  transition: all 0.7s
+
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: $z-index-modal
+  .hide
+    opacity: 0
+
+.mask-modal
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.75)
+  z-index: $z-index-modal + 10
+  @extend .modal-transition
+
+.window-modal
+  position: absolute
+  top: 100%
+  left: 50%
+  margin-left: -150px
+  min-height: 100px
+  min-width: 300px
+  width: 40%
+  background: #ffffff
+  z-index: $z-index-modal + 20
+  @extend .modal-transition
+  @media (max-width: #{$screen-lg})
+    width: 55%
+  @media (max-width: #{$screen-md})
+    width: 80%
+  .header-modal
+    min-height: $modal-header-size
+    line-height: $modal-header-size
+    text-align: center
+    color: #ffffff
+    font-size: 1.3rem
+    background: $color-bg-headers
+  .btn-close-modal
+    display: block
+    position: absolute
+    top: ($modal-header-size - $modal-btn-close-size)/2
+    left: auto
+    right: 10px
+    width: $modal-btn-close-size
+    height: $modal-btn-close-size
+    min-width: auto
+    min-height: auto
+    background: transparent url(../images/ico-sprite.png) no-repeat 0 -800px
+    border: none
+    padding: 0
+    margin: 0
+    transform: scale(0.5)
+    @extend .default-transition
+    @media (max-width: #{$screen-md})
+      right: 0
+    &:hover
+      -webkit-transform: rotate(90deg) scale(0.6)
+      -moz-transform: rotate(90deg) scale(0.6)
+      -ms-transform: rotate(90deg) scale(0.6)
+      -o-transform: rotate(90deg) scale(0.6)
+      transform: rotate(90deg) scale(0.6)
+    &:active
+      transform: rotate(90deg) scale(0.3)
+  .content-modal
+    padding: 10px
+.preloader-modal
+  position: absolute
+  top: 50%
+  left: 50%
+  margin: -50px 0 0 -50px
+  width: 100px
+  height: 100px
+  background: url(../images/loading.gif) no-repeat center center
+  z-index: $z-index-modal + 30
+  @extend .modal-transition
+  &.hide
+    z-index: $z-index-modal
+
+

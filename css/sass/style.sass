@@ -1,18 +1,82 @@
-$font-main:  Helvetica, sans-serif
-$font-color: #ccc
+@import "variables"
+
+$container-padding: 10px
 
 *
   margin: 0
   padding: 0
   border: none
-  font-size: 15px
+  outline: 0 !important
+  box-sizing: border-box
+
+
+html
+  min-height: 100%
+  font-size: 16px
+  font-family: $font-main
+
 
 body
   color: $font-color
+  min-height: 100%
+
+h1, h2, h3, h4
+  font-family: $font-h
+  font-size: 1.5rem
+  text-align: center
+  text-transform: uppercase
+  margin: 2rem auto
+a
+  text-decoration: none
+  cursor: pointer
+  color: #0099ff
+  &:hover
+    text-decoration: underline
+
+button
+  display: block
+  position: relative
+  height: 40px
+  line-height: 40px
+  text-align: center
+  color: #ffffff
+  padding: 0 20px
+  background-color: $color-btn
+  margin: 10px auto
+  min-width: 250px
+  border: 2px solid $color-btn
+  cursor: pointer
+  font:
+    size: 1rem
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+  &:active
+    padding-top: 3px
+    border-color: #ffffff
+    outline: 0
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    display: none
+    width: 40px
+    height: 40px
+    background: url(../images/ico-sprite.png) no-repeat
+  &:active:before
+    transform: scale(0.9)
+  &:focus
+    outline: 0
+
+
+
 
 .container
-  padding: 10px
-  width: 100%
+  padding: $container-padding
+  width: auto
   max-width: 1180px
   margin: 0 auto
 
@@ -20,14 +84,229 @@ body
   @extend .container
   max-width: none
   padding: 0
+  margin: 0
 
+.ico
+  background: url(../images/ico-sprite.png) no-repeat 0 0
+
+.scalar-animation
+  -o-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -webkit-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+
+.wrap-top
+  height: 100%
+.wrap
+  overflow: hidden
+  @extend .wrap-top
 
 
 .header
   .top
-    background-color: #2f3238
-    min-height: 200px
+    background-color: $color-header
+    min-height: 100px
+    @media(max-width: #{$screen-md})
+      min-height: auto
+    .container
+      text-align: center
+    .logo-opencart-ocstore
+      display: inline-block
+      vertical-align: top
+      width: 200px
+      height: 55px
+      background: url(../images/ico-sprite.png) no-repeat 0 -50px
+      @media(max-width: #{$screen-md})
+        margin-left: 65px
+    .text
+      color: #ff9933
+      font:
+        size: 1.5rem
+        family: $font-main
+      display: inline-block
+      vertical-align: top
+      height: 55px
+      line-height: 55px
+      padding: 0 20px
+      @media(max-width: #{$screen-md})
+        font-size: 1rem
+        line-height: 1.5rem
+        height: auto
+        margin-left: 65px
 
+
+.other-boxs
+  position: relative
+  padding: 0
+
+
+
+$width-ui-icon: 20px
+
+#currency-list-menu
+
+  .ui-menu-item-wrapper
+    padding: 5px 10px 5px $width-ui-icon * 2
+  .icon
+    display: inline-block
+    width: $width-ui-icon
+    height: $width-ui-icon
+    position: absolute
+    top: 50%
+    left: $width-ui-icon/2
+    margin-top: -10px
+    background-color: yellow
+    border-radius: $width-ui-icon/2
+    &:after
+      display: inline-block
+      width: $width-ui-icon
+      height: $width-ui-icon
+      position: absolute
+      top: 0
+      left: 0
+      text-align: center
+      line-height: $width-ui-icon
+      content: "$"
+      font-weight: bold
+      color: #000000
+    &.usd
+      &:after
+        content: "$"
+    &.rub
+      &:after
+        content: "P"
+    &.hrn
+      &:after
+        content: "h"
+  .ui-state-active
+    background: #ff8619
+    border: 1px dotted rgb(235, 52, 0)
+
+
+.mini-currency
+  position: absolute
+  top: -100px
+  right: 110px
+  z-index: 2
+  @extend .scalar-animation
+  @media(max-width: #{$screen-lg})
+    top: -45px
+    right: 75px
+
+  .ui-selectmenu-button.ui-button
+    padding-left: $width-ui-icon * 2
+    width: 130px
+    border-radius: 20px
+    border: 2px solid #838b9c
+    background: none
+    color: yellow
+    line-height: 28px
+    .ui-icon
+      background: url(../images/ico-sprite.png) no-repeat 0px -200px
+      width: 15px
+      height: 15px
+      margin-top: 8px
+    &:focus
+      .ui-icon
+        background: url(../images/ico-sprite.png) no-repeat 0px -200px
+        width: 15px
+        height: 15px
+    .icon
+      display: inline-block
+      width: $width-ui-icon
+      height: $width-ui-icon
+      position: absolute
+      top: 50%
+      left: $width-ui-icon/2
+      margin-top: -10px
+      background-color: yellow
+      border-radius: $width-ui-icon/2
+      &:after
+        display: inline-block
+        width: $width-ui-icon
+        height: $width-ui-icon
+        position: absolute
+        top: 0
+        left: 0
+        text-align: center
+        line-height: $width-ui-icon
+        content: "$"
+        font-weight: bold
+        color: #000000
+      &.usd
+        &:after
+          content: "$"
+      &.rub
+        &:after
+          content: "P"
+      &.hrn
+        &:after
+          content: "h"
+    @media(max-width: #{$screen-md})
+      width: 70px
+      .ui-selectmenu-text
+        font-size: 0
+        .icon
+          font-size: 1rem
+
+.mini-cart
+  display: block
+  width: 60px
+  height: 55px
+  position: absolute
+  top: -110px
+  right: 20px
+  @extend .scalar-animation
+  @media(max-width: #{$screen-lg})
+    top: -60px
+    right: 5px
+
+  .cart
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-position: 0 -1250px
+  .count
+    width: $width-ui-icon
+    height: $width-ui-icon
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -1 * $width-ui-icon / 2
+    margin-top:  -1 * $width-ui-icon / 2 + 10px
+    line-height: $width-ui-icon
+    vertical-align: middle
+    text-align: center
+    font-weight: bold
+    background-color: yellow
+    color: black
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+
+  &:hover
+    transform: scale(1.1)
+
+
+.footer
+  height: $footer-height
+  &-offset
+    height: $footer-height
+
+.for-modal
+  display: none
+
+@import "menu"
+@import "contact"
+@import "work_place"
 @import "modal"
 @import "menu"
 @import "form"
+@import "footer"
+@import "circliful"
+@import "product_description"
+@import "technologies"

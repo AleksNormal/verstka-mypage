@@ -1,3 +1,6 @@
+@import "variables"
+
+
 $btn-height: 40px
 
 .btn
@@ -9,4 +12,60 @@ $btn-height: 40px
   cursor: pointer
   font-family: Arial
   font-size: 1rem
-  
+
+.default-field
+  display: inline-block
+  padding: 5px 10px
+  width: 100%
+  position: relative
+  font-size: 1rem
+.default-font
+  font:
+    size: 1.2rem
+    family: "Helvetica Neue",Helvetica,Arial,sans-serif
+
+form, input, textarea, select
+  @extend .default-font
+
+
+form
+  .field
+    @extend .default-field
+  .field-2
+    @extend .default-field
+    //border: 1px solid #0099ff
+    width: 50%
+    @media (max-width: #{$screen-lg})
+      width: 100%
+
+
+  input
+    height: 40px
+    line-height: 40px
+    width: 100%
+    position: relative
+  textarea
+    height: 200px
+    width: 100%
+    border: 1px solid #cccccc
+    padding: 1rem
+    color: #595f6e
+    font-weight: bold
+
+
+  .input
+    margin: 0
+    width: 100%
+    max-width: none
+    @extend .default-field
+  .input__label-content
+    font-size: 1rem
+  label
+    color: #6a7989
+    font-weight: bold
+    padding: 0 .25em
+  .label
+    margin: 1rem 0 10px 0
+
+
+

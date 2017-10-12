@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/css/TextInputEffects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/js/bxslider-4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/js/jquery-plugin-circliful" vcs="Git" />
   </component>
 </project>

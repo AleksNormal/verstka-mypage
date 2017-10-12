@@ -1,0 +1,39 @@
+@import "variables"
+
+.technologies
+  margin-bottom: 60px
+  .container
+    padding: 15px 35px
+  .bx-wrapper
+    margin: 0 auto
+    border: none
+    -webkit-box-shadow: none
+    -moz-box-shadow: none    
+    box-shadow: none
+    .bx-controls-direction a
+      width: 25px
+      height: 86px
+      margin-top: -43px
+      background: url(../images/ico-sprite.png) no-repeat
+      @media (max-width: #{$screen-md})
+        -webkit-transform: scale(0.6)
+        -moz-transform: scale(0.6)
+        -ms-transform: scale(0.6)
+        -o-transform: scale(0.6)
+        transform: scale(0.6)
+      &.bx-prev
+        background-position: -71px -295px
+        left: -30px
+      &.bx-next
+        background-position: -103px -295px
+        right: -30px
+  li
+    list-style: none
+    display: inline-block
+    width: 100px
+    img
+      width: 100%
+  h2
+    @media (max-width: #{$screen-md})
+      margin-top: 0
+

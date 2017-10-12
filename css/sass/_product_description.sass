@@ -1,0 +1,75 @@
+@import "variables"
+$pd-main-color: #9900ff
+//660099
+
+.pd-before-after
+  content: " "
+  display: block
+  width: 60px
+  height: 60px
+  position: absolute
+  top: -15px
+  left: -15px
+  background: $pd-main-color url(../images/ico-sprite.png) 0 -900px no-repeat
+  border: 1px solid $pd-main-color - 330055
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  @media (max-width: #{$screen-sx})
+    background-image: none
+    width: 5px
+    height: 100%
+    top: 0
+    left: 0
+    border-radius: 0
+    border: none
+
+.pd-text
+  border: 2px solid $pd-main-color
+  border-top: none
+  border-bottom: none
+  margin: 0 35px
+  padding: 15px 40px
+  @media (max-width: #{$screen-sx})
+    border: none
+    padding: 15px
+    margin: 0
+
+.product-description
+  margin: 25px auto 0 auto
+  h2
+    position: relative
+    background-color: #e5e5e5
+    padding: 10px 15px
+    text-transform: none
+    font-size: 1.2rem
+    margin: 0 20px
+    @media (max-width: #{$screen-sx})
+      margin: 0
+    &:before
+      @extend .pd-before-after
+    &:after
+      @extend .pd-before-after
+      left: auto
+      right: -15px
+      @media (max-width: #{$screen-sx})
+        right: 0
+  p, ol, ul, li
+    line-height: 1.6rem
+  & .container > p
+    @extend .pd-text
+  & .container > div
+    @extend .pd-text
+  & .container > ol
+    @extend .pd-text
+  & .container > ul
+    @extend .pd-text
+  p, ol ,ul
+    &:last-child
+      border-bottom: 1px solid $pd-main-color
+      @media (max-width: #{$screen-sx})
+        border: none
+
+
+
+
