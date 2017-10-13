@@ -1,0 +1,122 @@
+@import "variables"
+$color-price: #ff6600
+
+.list-products
+  .product
+    padding-top: 10px
+    border-top: 3px solid $color-link
+    .image-price-box
+      float: left
+      width: 35%
+      height: 100%
+      background: #ccffff
+      @media (max-width: #{$screen-md})
+        float: none
+        width: 100%
+        margin-bottom: 20px
+    .name-button-box
+      float: right
+      width: 65%
+      height: 100%
+      position: relative
+      @media (max-width: #{$screen-md})
+        float: none
+        width: 100%
+    .image
+      img
+        width: 100%
+        height: auto
+        @media (max-width: #{$screen-md})
+          width: 25%
+          float: left
+    .price
+      color: $color-price
+      line-height: 40px
+      padding: 10px
+      text-align: center
+      @media (max-width: #{$screen-md})
+        width: 75%
+        float: right
+        margin-top: 10px
+      span
+        vertical-align: middle
+        display: inline-block
+      .ico
+        display: inline-block
+        width: 40px
+        height: 40px
+        background-position: -50px -1350px
+      .number
+        font-size: 2rem
+        font-weight: bold
+      &.usd .ico
+        background-position: -50px -1350px
+      &.rub .ico
+        background-position: -50px -1397px
+      &.hrn .ico
+        background-position: -50px -1443px
+    .name
+      padding: 0 10px
+      font-size: 1.2rem
+      font-weight: bold
+    .short-description
+      padding: 10px
+      min-height: 130px
+      overflow: hidden
+      @media (max-width: #{$screen-md})
+        min-height: unset
+      li
+        display: inline-block
+        position: relative
+        padding-left: 20px
+        line-height: 1.2rem
+        &:before
+          content: " "
+          display: block
+          width: 15px
+          height: 15px
+          background: url(../images/ico-sprite.png) no-repeat -210px -1185px
+          top: 0.2rem
+          left: 0
+          position: absolute
+
+    .btn-product-link
+      width: 100%
+      background: url(../images/ico-sprite.png) no-repeat 0 -1500px
+      //border: none
+      margin: 0 auto
+      max-width: 400px
+      border: 2px solid #006298
+      &:hover
+        text-decoration: none
+      &:active
+        border-color: #ffffff
+
+    .btn-product-details
+      width: 100%
+      background: url(../images/ico-sprite.png) no-repeat 0 -980px
+      //border: none
+      margin: 5px auto 0 auto
+      max-width: 400px
+      border: 2px solid #bd00a6
+      &:active
+        border-color: #ffffff
+
+
+
+
+
+  .product-container
+    float: left
+    width: 48%
+    margin: 10px 2% 20px 0
+    @media (max-width: #{$screen-lg})
+      width: 100%
+      margin: 10px 0 20px 0
+    &.second
+      float: right
+      margin: 10px 0 20px 2%
+      @media (max-width: #{$screen-lg})
+        margin: 10px 0 20px 0
+
+

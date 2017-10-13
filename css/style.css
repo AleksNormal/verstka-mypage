@@ -35,7 +35,7 @@ a {
   a:hover {
     text-decoration: underline; }
 
-button {
+button, .btn {
   display: block;
   position: relative;
   height: 40px;
@@ -49,16 +49,16 @@ button {
   border: 2px solid #0099ff;
   cursor: pointer;
   font-size: 1rem;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-  button:active {
+  -webkit-transition: padding, margin, border-width, top, left 0.3s;
+  -moz-transition: padding, margin, border-width, top, left 0.3s;
+  -ms-transition: padding, margin, border-width, top, left 0.3s;
+  -o-transition: padding, margin, border-width, top, left 0.3s;
+  transition: padding, margin, border-width, top, left 0.3s; }
+  button:active, .btn:active {
     padding-top: 3px;
     border-color: #ffffff;
     outline: 0; }
-  button:before {
+  button:before, .btn:before {
     content: "";
     position: absolute;
     top: 0;
@@ -67,9 +67,9 @@ button {
     width: 40px;
     height: 40px;
     background: url(../images/ico-sprite.png) no-repeat; }
-  button:active:before {
+  button:active:before, .btn:active:before {
     transform: scale(0.9); }
-  button:focus {
+  button:focus, .btn:focus {
     outline: 0; }
 
 .container, .container-full {
@@ -85,6 +85,9 @@ button {
 
 .ico {
   background: url(../images/ico-sprite.png) no-repeat 0 0; }
+
+.clear {
+  clear: both; }
 
 .scalar-animation, .mini-currency, .mini-cart {
   -o-transition: all 0.3s ease-in-out;
@@ -103,7 +106,7 @@ button {
   min-height: 100px; }
 @media(max-width: 567px) {
   .header .top {
-    min-height: auto; } }
+    min-height: unset; } }
   .header .top .container, .header .top .container-full {
     text-align: center; }
   .header .top .logo-opencart-ocstore {
@@ -1013,16 +1016,6 @@ button {
   -o-transition: all 0.4s;
   transition: all 0.4s; }
 
-.btn {
-  height: 40px;
-  padding: 0 15px;
-  background-color: #0099ff;
-  color: #ffffff;
-  text-align: center;
-  cursor: pointer;
-  font-family: Arial;
-  font-size: 1rem; }
-
 .default-field, form .field, form .field-2, form .input {
   display: inline-block;
   padding: 5px 10px;
@@ -1232,5 +1225,126 @@ form .label {
   @media (max-width: 567px) {
     .technologies h2 {
       margin-top: 0; } }
+
+.default-transition, .main-content .description, .main-content .services.variant-2, .main-content .services.variant-2 li:before, .window-modal .btn-close-modal {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.list-products .product {
+  padding-top: 10px;
+  border-top: 3px solid #0099ff; }
+  .list-products .product .image-price-box {
+    float: left;
+    width: 35%;
+    height: 100%;
+    background: #ccffff; }
+    @media (max-width: 567px) {
+      .list-products .product .image-price-box {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px; } }
+  .list-products .product .name-button-box {
+    float: right;
+    width: 65%;
+    height: 100%;
+    position: relative; }
+    @media (max-width: 567px) {
+      .list-products .product .name-button-box {
+        float: none;
+        width: 100%; } }
+  .list-products .product .image img {
+    width: 100%;
+    height: auto; }
+    @media (max-width: 567px) {
+      .list-products .product .image img {
+        width: 25%;
+        float: left; } }
+  .list-products .product .price {
+    color: #ff6600;
+    line-height: 40px;
+    padding: 10px;
+    text-align: center; }
+    @media (max-width: 567px) {
+      .list-products .product .price {
+        width: 75%;
+        float: right;
+        margin-top: 10px; } }
+    .list-products .product .price span {
+      vertical-align: middle;
+      display: inline-block; }
+    .list-products .product .price .ico {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-position: -50px -1350px; }
+    .list-products .product .price .number {
+      font-size: 2rem;
+      font-weight: bold; }
+    .list-products .product .price.usd .ico {
+      background-position: -50px -1350px; }
+    .list-products .product .price.rub .ico {
+      background-position: -50px -1397px; }
+    .list-products .product .price.hrn .ico {
+      background-position: -50px -1443px; }
+  .list-products .product .name {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold; }
+  .list-products .product .short-description {
+    padding: 10px;
+    min-height: 130px;
+    overflow: hidden; }
+    @media (max-width: 567px) {
+      .list-products .product .short-description {
+        min-height: unset; } }
+    .list-products .product .short-description li {
+      display: inline-block;
+      position: relative;
+      padding-left: 20px;
+      line-height: 1.2rem; }
+      .list-products .product .short-description li:before {
+        content: " ";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: url(../images/ico-sprite.png) no-repeat -210px -1185px;
+        top: 0.2rem;
+        left: 0;
+        position: absolute; }
+  .list-products .product .btn-product-link {
+    width: 100%;
+    background: url(../images/ico-sprite.png) no-repeat 0 -1500px;
+    margin: 0 auto;
+    max-width: 400px;
+    border: 2px solid #006298; }
+    .list-products .product .btn-product-link:hover {
+      text-decoration: none; }
+    .list-products .product .btn-product-link:active {
+      border-color: #ffffff; }
+  .list-products .product .btn-product-details {
+    width: 100%;
+    background: url(../images/ico-sprite.png) no-repeat 0 -980px;
+    margin: 5px auto 0 auto;
+    max-width: 400px;
+    border: 2px solid #bd00a6; }
+    .list-products .product .btn-product-details:active {
+      border-color: #ffffff; }
+.list-products .product-container {
+  float: left;
+  width: 48%;
+  margin: 10px 2% 20px 0; }
+  @media (max-width: 1023px) {
+    .list-products .product-container {
+      width: 100%;
+      margin: 10px 0 20px 0; } }
+  .list-products .product-container.second {
+    float: right;
+    margin: 10px 0 20px 2%; }
+    @media (max-width: 1023px) {
+      .list-products .product-container.second {
+        margin: 10px 0 20px 0; } }
 
 /*# sourceMappingURL=style.css.map */
