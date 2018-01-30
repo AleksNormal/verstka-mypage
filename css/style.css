@@ -1347,4 +1347,18 @@ form .label {
       .list-products .product-container.second {
         margin: 10px 0 20px 0; } }
 
+.default-transition, .main-content .description, .main-content .services.variant-2, .main-content .services.variant-2 li:before, .window-modal .btn-close-modal {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.page-product .photo-slider {
+  width: 50%;
+  float: left; }
+.page-product .price-options-box {
+  width: 40%;
+  float: right; }
+
 /*# sourceMappingURL=style.css.map */
